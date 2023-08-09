@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+
+button{
+  font-size: 0.8rem;
+  padding: 13px 30px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s ease;
+  border: none;
+  outline: none;
+  background: #1d1d1d;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+button:hover{
+  background: #3a3833;
+
+}
+
+.bg-body-tertiary .navbar-nav .nav-link{
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+
+}
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+}
+
+.bg-body-tertiary .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.bg-body-tertiary .navbar-nav .nav-link.active,
+navbar i.active{
+  color: #b3e86e;
+}
+
+.navbar i{
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+
+}
+
+#bar {
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color: #1d1d1d;
+
+}
+
+#bar:hover,
+#bar.active{
+  color: #fff;
+}
+
+/* Moblie Nav */
+.bg-body-tertiary .navbar-toggler{
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 991px){
+  body > nav > div > button:hover,
+  body > nav > div > button:focus{
+    background-color: #b3e86e;
+  }
+
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar{
+    color: #fff;
+  }
+
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a{
+    padding:10px 0;
+  }
+
+}
+
+#home{
+  background-image: url("img/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 90px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span{
+  color: #b3e86e;
+}
+
+#home h1{
+  color: #1d1d1d;
+}
+
+#new .one img{
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+#new .one .details{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3 ease;
+}
+
+#new .one:hover .details{
+  cursor: pointer;
+  background-color: #b3e86e;
+}
+
+#new .one .details button{
+  font-size: 14px;
+  font-weight: 500;
+  color:rgb(0, 0, 0);
+  background: none;
+  text-transform: uppercase;
+  border: 1px solid ;
+  padding: 2.5px;
+  display: inline-block;
+
+}
+
+#new .one .details button:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#new .one:nth-child(1) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+#new .one:nth-child(2) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#new .one:nth-child(3) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+#banner{
+  background-image: url("img/banner/parallax.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+#banner h4,h1{
+  color: antiquewhite;
+}
+
+#banner button{
+  background-color: #b3e86e;
+}
+
+.copyright{
+  text-align: center;
+}
+
+/* Products */
+
+.product{
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+}
+
+.product img{
+  transition: 0.3s all;
+}
+
+.product:hover img{
+  opacity: 0.7;
+}
+
+.product .buy-btn{
+  background: #b3e86e;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+  opacity: 1;
+  transform: translateY(0);
+}
